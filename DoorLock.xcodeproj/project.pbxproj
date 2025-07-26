@@ -29,9 +29,22 @@
 		B30DB2CE2DDB4DB900C2571E /* DoorLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B30DB2F32DDB513500C2571E /* Exceptions for "DoorLock" folder in "DoorLock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B30DB2AE2DDB4DB700C2571E /* DoorLock */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B30DB2B12DDB4DB700C2571E /* DoorLock */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B30DB2F32DDB513500C2571E /* Exceptions for "DoorLock" folder in "DoorLock" target */,
+			);
 			path = DoorLock;
 			sourceTree = "<group>";
 		};
