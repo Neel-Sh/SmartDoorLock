@@ -23,8 +23,8 @@ iOS application that allows you to remotely control a door lock mechanism using 
 ## Technical Details
 
 ### Requirements
-- iOS 16.0+
-- Xcode 14+
+- iOS 18.0+
+- Xcode with an iOS 18 or newer SDK
 - Physical iOS device with Bluetooth capability (simulator cannot test Bluetooth features)
 - Arduino with HM-10 (or compatible) BLE module
 
@@ -50,5 +50,12 @@ The Arduino should be configured with:
 4. Scan for your HM-10 device
 5. Connect and control your door lock
 
-## License
-This project is for educational purposes. Commercial use requires proper licensing and security review. 
+## Prototype scope
+
+This is an educational BLE controller. The repository does not contain lock firmware, wiring instructions, or a verified authentication/security design for a physical lock. The UI state is not proof that a door is physically secured. No repository-wide license file is included.
+
+The existing usage notice remains: "This project is for educational purposes. Commercial use requires proper licensing and security review."
+
+## Development
+
+Select your own signing team before running the **DoorLock** scheme on an iPhone. `DoorLock/BLEManager.swift` owns discovery and command writes; the other views expose controls, settings, and logs. Simulator builds can check compilation, but BLE command delivery needs a compatible peripheral and physical device. See [Contributing](CONTRIBUTING.md).
